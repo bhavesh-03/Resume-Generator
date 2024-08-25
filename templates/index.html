@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Resume Generator</h1>
+    <form action="/generate_resume" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="job_title">Job Title:</label>
+        <input type="text" id="job_title" name="job_title" required><br><br>
+
+        <label for="responsibilities">Responsibilities:</label>
+        <textarea id="responsibilities" name="responsibilities" required></textarea><br><br>
+
+        <label for="qualifications">Qualifications:</label>
+        <textarea id="qualifications" name="qualifications" required></textarea><br><br>
+
+        <label for="experience">Experience:</label>
+        <textarea id="experience" name="experience" required></textarea><br><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required><br><br>
+
+        <label for="coding_profile_link">Coding Profile Link:</label>
+        <input type="text" id="coding_profile_link" name="coding_profile_link"><br><br>
+
+        <input type="submit" value="Generate Resume">
+    </form>
+</body>
+</html>

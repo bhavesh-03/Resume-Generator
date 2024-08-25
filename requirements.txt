@@ -1,0 +1,5 @@
+Flask==2.1.1
+joblib==1.1.0
+pandas==2.0.2
+transformers==4.29.2
+docx==0.2.5
